@@ -1,4 +1,6 @@
+import AOSInit from '@/components/AOSInit';
 import { cn } from '@/lib/utils';
+import 'aos/dist/aos.css';
 import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import '../styles/globals.css';
@@ -18,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn('antialiased', montserrat.className)}>
       <body className={cn('relative', { 'debug-screens': process.env.NODE_ENV === 'development' })}>
+        <AOSInit />
         <div>{children}</div>
       </body>
     </html>
