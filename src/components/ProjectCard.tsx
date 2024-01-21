@@ -5,11 +5,9 @@ import Project from '../../public/assets/dummy/project-1.jpg';
 import { AspectRatio } from './ui/aspect-ratio';
 import { Card, CardContent } from './ui/card';
 
-interface ProjectCardProps extends React.HTMLAttributes<HTMLDivElement> {}
-
-const ProjectCard: React.FC<ProjectCardProps> = (props) => {
+const ProjectCard = () => {
   return (
-    <Card {...props} className="transition-all hover:rotate-1 hover:cursor-pointer hover:bg-muted">
+    <Card className="transition-all hover:rotate-1 hover:cursor-pointer hover:bg-muted">
       <CardContent className="p-4 pb-6">
         <AspectRatio ratio={16 / 9}>
           <Image src={Project} alt="project-image" fill className="rounded-sm object-cover" />

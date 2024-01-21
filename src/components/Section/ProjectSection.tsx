@@ -11,9 +11,15 @@ const ProjectSection = () => {
         <p className="text-lg text-accent-foreground">These are some of the projects I have created. These projects have not only helped me build my portfolio, but also enhanced the skills I have developed.</p>
       </div>
       <div className="mx-auto my-8 grid grid-cols-1 place-items-center gap-4 md:max-w-full md:grid-cols-3 lg:px-10">
-        <ProjectCard data-aos="fade-up" data-aos-delay="50" />
-        <ProjectCard data-aos="fade-up" data-aos-delay="150" />
-        <ProjectCard data-aos="fade-up" data-aos-delay="250" />
+        <div data-aos="fade-up" data-aos-delay="50">
+          <ProjectCard />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="150">
+          <ProjectCard />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="250">
+          <ProjectCard />
+        </div>
       </div>
     </section>
   );
