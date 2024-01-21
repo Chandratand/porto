@@ -2,6 +2,7 @@
 import Lottie from 'lottie-react';
 import { Button } from '../ui/button';
 import CodingAnimation from '../../../public/assets/coding-animation.json';
+import { MyContactDialog } from '../MyContactDialog';
 
 const CTASection = () => {
   return (
@@ -10,7 +11,7 @@ const CTASection = () => {
         <div>
           <p className="text-sm font-bold text-primary sm:mb-2 md:text-lg">HAVE ANY PROJECT IDEA?</p>
           <h3 className="mb-3 max-w-[430px] text-2xl font-bold text-foreground sm:mb-5 md:max-w-[530px] lg:text-4xl">Let&apos;s turn your visionary ideas into reality together.</h3>
-          <Button>Contact Me</Button>
+          <MyContactDialog />
         </div>
         <div className="hidden px-4 sm:block lg:px-8">
           <Lottie animationData={CodingAnimation} loop className="max-w-[300px]" />

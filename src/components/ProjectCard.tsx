@@ -1,28 +1,35 @@
 import { ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Project from '../../public/assets/dummy/project-1.jpg';
+import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from './ui/alert-dialog';
 import { AspectRatio } from './ui/aspect-ratio';
 import { Card, CardContent } from './ui/card';
 
-interface ProjectCardProps extends React.HTMLAttributes<HTMLDivElement> {}
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  image: string;
+  href?: string;
+}
 
-const ProjectCard: React.FC<ProjectCardProps> = (props) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, href }) => {
   return (
-    <Card {...props} className="transition-all hover:rotate-1 hover:cursor-pointer hover:bg-muted">
+    <Card className="group transition-all hover:rotate-1 hover:cursor-default hover:bg-muted">
       <CardContent className="p-4 pb-6">
         <AspectRatio ratio={16 / 9}>
-          <Image src={Project} alt="project-image" fill className="rounded-sm object-cover" />
+          <Image src={image} alt={title + 'thumbnail'} fill className="rounded-sm object-cover" />
         </AspectRatio>
         <div className="mt-4">
-          <h3 className="mb-2 text-xl font-semibold lg:text-2xl">Lorem Website</h3>
-          <p className="mb-4 line-clamp-6 text-justify text-sm text-muted-foreground">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione veniam ab inventore aliquam sed cupiditate, atque esse alias laudantium dolorem, facere dignissimos exercitationem labore reiciendis eius quae repellat.
-            Similique, doloribus.
-          </p>
-          <Link href={'/'} className="flex items-center gap-1 text-sm font-semibold text-primary">
-            View Project <ExternalLink size={16} />
-          </Link>
+          <h3 className="mb-2 text-xl font-semibold lg:text-2xl">{title}</h3>
+          <div className="h-[175px]">
+            <p className="mb-4 line-clamp-[8] text-justify text-sm text-muted-foreground">{description}</p>
+          </div>
+
+          {href && (
+            <Link href={href || '/'} className="flex items-center gap-1 text-sm font-semibold text-primary">
+              View Project <ExternalLink size={16} />
+            </Link>
+          )}
         </div>
       </CardContent>
     </Card>
