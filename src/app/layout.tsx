@@ -1,4 +1,4 @@
-import AOSInit from '@/components/AOSInit';
+import Navbar from '@/components/Navbar';
 import { cn } from '@/lib/utils';
 import 'aos/dist/aos.css';
 import type { Metadata } from 'next';
@@ -20,8 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn('antialiased', montserrat.className)}>
       <body className={cn('relative', { 'debug-screens': process.env.NODE_ENV === 'development' })}>
-        <AOSInit />
-        <div>{children}</div>
+        <Navbar />
+        <div className="pt-14">{children}</div>
       </body>
     </html>
   );

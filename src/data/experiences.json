@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Software Developer - Adaremit",
+    "description": "Work as a software developer on the frontend and backend sides, collaborating with the team in creating websites and mobile applications for PT Anugrah Danamas Remit (Adaremit).",
+    "logo": "/assets/logo/adaremit-logo.svg",
+    "period": "Descember 2021 - Now"
+  },
+  {
+    "id": 2,
+    "title": "Fullstack Developer - MFC",
+    "description": "Becoming a full-stack developer for MFC in the \"Pengabdian Kepada Masyarakat (PkM)\" program, playing a role in developing software with the team for MFC.",
+    "logo": "/assets/logo/mfc-logo.png",
+    "period": "April 2023 - Febuary 2024"
+  },
+  {
+    "id": 3,
+    "title": "Student - Mikroskil University",
+    "description": "Became an information systems student at Mikroskil University and achieved a provisional GPA of 3.96.",
+    "logo": "/assets/logo/mikroskil-logo.png",
+    "period": "October 2020 - Febuary 2024"
+  }
+]

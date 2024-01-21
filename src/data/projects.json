@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "title": "Adaremit Admin",
+    "description": "Operational admins use the Adaremit admin website to perform their operational activities. This website uses NextJs technology on the frontend side and Node.js on the backend side to create APIs. My role as a frontend developer sometimes also plays a role on the backend side as well.  ",
+    "image": "/assets/dummy/project-1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Adaremit Website",
+    "description": "The Adaremit website is one of the products of PT Anugrah Danamas Remit. Adaremit provides money transfer services abroad. Serve as a full-stack developer. Collaborate with the team to translate business requirements into a website that users can utilize, ensuring adherence to SEO best practices during the site design process. Using NextJS in website development on the frontend and Node.js on the backend.",
+    "image": "/project/adaremit-fe.png",
+    "href": "/"
+  },
+  {
+    "id": 3,
+    "title": "Adaremit Blog",
+    "description": "Adaremit's blog was created to improve the SEO of Adaremit itself. Using NextJS technology, which is a framework of ReactJS and APIs from WordPress, to develop the website. Has a role in creating the frontend and UI of the blog.",
+    "image": "/project/adaremit-blog.png",
+    "href": "/"
+  },
+  {
+    "id": 4,
+    "title": "Adaremit Mobile Apps",
+    "description": "The Adaremit mobile application is one of the products of PT Anugrah Danamas Remit. Where Adaremit provides money transfer services abroad.Take on a role as a mobile developer, especially the frontend, who works with the team in developing applications. Using React Native technology in creating mobile applications for Android and iOS.",
+    "image": "/project/adaremit-mobile.png",
+    "href": "/"
+  },
+  {
+    "id": 5,
+    "title": "MFC Web And Mobile",
+    "description": "Created a mobile application and website for an MFC (My Family Church) church to manage their congregation. acted as a FullStack developer in the creation of mobile applications and APIs. Using react native technology for mobile application and Laravel for website and API",
+    "image": "/project/mfc.png",
+    "href": "/"
+  }
+]
