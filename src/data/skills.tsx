@@ -3,7 +3,7 @@ import { LucideProps } from 'lucide-react';
 const SKILL_LIST = [
   {
     id: 1,
-    title: 'React JS',
+    title: 'React JS & Native',
     icon: (props: LucideProps) => (
       <svg {...props} xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
         <path fill="#53C1DE" d="M37.358 31.952c0-2.87-2.399-5.195-5.358-5.195-2.959 0-5.358 2.326-5.358 5.195s2.4 5.195 5.358 5.195c2.96 0 5.358-2.326 5.358-5.195z"></path>
