@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, hr
           </div>
 
           {href && (
-            <Link href={href || '/'} className="flex items-center gap-1 text-sm font-semibold text-primary">
+            <Link href={href || '/'} target="_blank" className="flex items-center gap-1 text-sm font-semibold text-primary">
               View Project <ExternalLink size={16} />
             </Link>
           )}
