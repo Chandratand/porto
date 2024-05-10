@@ -9,7 +9,7 @@ const ProjectSection = () => {
         <h2 className="text-4xl font-bold md:text-5xl">
           Check out my latest <AccentText>project</AccentText>
         </h2>
-        <p className="text-lg text-accent-foreground">These are some of the projects I have created.</p>
+        {/* <p className="text-lg text-accent-foreground">These are some of the projects I have created.</p> */}
       </div>
       <div className="mx-auto my-8 grid grid-cols-1 gap-4 md:max-w-full md:grid-cols-3 lg:px-10">
         {PROJECT_LIST.map((project, index) => (
