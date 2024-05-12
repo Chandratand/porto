@@ -7,7 +7,7 @@ const ProjectSection = () => {
     <section className="container py-8">
       <div className="mx-auto max-w-3xl space-y-4 text-center">
         <h2 className="text-4xl font-bold md:text-5xl">
-          Check out my latest <AccentText>project</AccentText>
+          Check out my latest <AccentText>projects</AccentText>
         </h2>
         <p className="text-lg text-accent-foreground">These are some of the projects I have created. These projects have not only helped me build my portfolio, but also enhanced the skills I have developed.</p>
       </div>
