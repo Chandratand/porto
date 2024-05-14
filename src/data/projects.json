@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Adaremit Admin",
     "description": "Operational admins use the Adaremit admin website to perform their operational activities. This website uses NextJs technology on the frontend side and Node.js on the backend side to create APIs. My role as a frontend developer sometimes also plays a role on the backend side as well.  ",
-    "image": "/assets/dummy/project-1.jpg"
+    "image": "/project/adaremit-admin.png"
   },
   {
     "id": 2,
