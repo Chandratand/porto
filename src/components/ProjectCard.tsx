@@ -1,7 +1,6 @@
 import { ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { AlertDialog, AlertDialogAction, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from './ui/alert-dialog';
 import { AspectRatio } from './ui/aspect-ratio';
 import { Card, CardContent } from './ui/card';
 
@@ -21,15 +20,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, hr
         </AspectRatio>
         <div className="mt-4">
           <h3 className="mb-2 text-xl font-semibold lg:text-2xl">{title}</h3>
-          <div className="h-[175px]">
+          <div className="flex min-h-[210px] flex-col justify-between">
             <p className="mb-4 line-clamp-[8] text-justify text-sm text-muted-foreground">{description}</p>
+            {href && (
+              <Link href={href || '/'} target="_blank" className="flex items-center gap-1 text-sm font-semibold text-primary">
+                View Project <ExternalLink size={16} />
+              </Link>
+            )}
           </div>
-
-          {href && (
-            <Link href={href || '/'} target="_blank" className="flex items-center gap-1 text-sm font-semibold text-primary">
-              View Project <ExternalLink size={16} />
-            </Link>
-          )}
         </div>
       </CardContent>
     </Card>
