@@ -5,11 +5,11 @@ import PROJECT_LIST from '../../data/projects.json';
 const ProjectSection = () => {
   return (
     <section className="container py-8">
-      <div className="mx-auto max-w-3xl space-y-4 text-center">
+      <div className="mx-auto max-w-4xl space-y-4 text-center">
         <h2 className="text-4xl font-bold md:text-5xl">
           Check out my latest <AccentText>project</AccentText>
         </h2>
-        <p className="text-lg text-accent-foreground">These are some of the projects I have created. These projects have not only helped me build my portfolio, but also enhanced the skills I have developed.</p>
+        <p className="text-lg text-accent-foreground">These projects have not only helped build my portfolio but also provided real-world applications that solve problems, giving me practical experience, and enhanced my skills.</p>
       </div>
       <div className="mx-auto my-8 grid grid-cols-1 gap-4 md:max-w-full md:grid-cols-3 lg:px-10">
         {PROJECT_LIST.map((project, index) => (
