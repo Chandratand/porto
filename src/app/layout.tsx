@@ -21,7 +21,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn('antialiased', montserrat.className)} suppressHydrationWarning>
       <body className={cn('relative', { 'debug-screens': process.env.NODE_ENV === 'development' })}>
-        <Provider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <Provider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          // disableTransitionOnChange
+        >
           <Navbar />
           <div className="pt-14">{children}</div>
         </Provider>
