@@ -1,12 +1,14 @@
 'use client';
-import Lottie from 'lottie-react';
-import { Button } from '../ui/button';
-import CodingAnimation from '../../../public/assets/coding-animation.json';
+import dynamic from 'next/dynamic';
 import { MyContactDialog } from '../MyContactDialog';
+import CodingAnimation from '../../../public/assets/coding-animation.json';
+
+// Dynamically import the Lottie component with SSR disabled
+const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 const CTASection = () => {
   return (
-    <section className="flex items-center justify-center bg-primary px-4 py-16">
+    <section className="flex items-center justify-center bg-primary px-4 py-16 dark:bg-muted">
       <div className="flex w-full max-w-[1000px] items-center justify-between rounded-3xl border bg-background px-8 py-10 shadow-sm sm:rounded-[32px] sm:px-12">
         <div>
           <p className="text-sm font-bold text-primary sm:mb-2 md:text-lg">HAVE ANY PROJECT IDEA?</p>

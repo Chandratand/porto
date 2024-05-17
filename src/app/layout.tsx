@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import '../styles/globals.css';
+import Provider from '@/components/Provider';
 
 const montserrat = Montserrat({ subsets: ['latin'] });
 
@@ -18,10 +19,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn('antialiased', montserrat.className)}>
+    <html lang="en" className={cn('antialiased', montserrat.className)} suppressHydrationWarning>
       <body className={cn('relative', { 'debug-screens': process.env.NODE_ENV === 'development' })}>
-        <Navbar />
-        <div className="pt-14">{children}</div>
+        <Provider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <Navbar />
+          <div className="pt-14">{children}</div>
+        </Provider>
       </body>
     </html>
   );

@@ -1,10 +1,10 @@
 'use client';
 
-import { cn } from '@/lib/utils';
 import AOS from 'aos';
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
-import { buttonVariants } from './ui/button';
+import DownloadMyCVButton from './DownloadMyCVButton';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const headerRef = useRef<HTMLInputElement>(null);
@@ -28,15 +28,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header ref={headerRef} className="fixed z-50 w-full border-b bg-white">
+    <header ref={headerRef} className="fixed z-50 w-full border-b bg-background">
       <nav className="container flex items-center justify-between p-4 py-3">
         <Link href={'/'} className="font-extrabold">
           Chandratand
         </Link>
-        <div className="flex items-center gap-1 sm:gap-2">
-          <Link target="_blank" href={'/assets/CV-Chandra Tandiono.pdf'} className={cn(buttonVariants({ variant: 'secondary', size: 'sm' }), 'font-bold')}>
-            Download my CV
-          </Link>
+        <div className="flex items-center gap-1">
+          <ThemeToggle />
+          <DownloadMyCVButton />
         </div>
       </nav>
     </header>
