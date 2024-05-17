@@ -7,7 +7,7 @@ import ExperienceList from '../ExperienceList';
 const ExperienceSection = () => {
   return (
     <section className="container py-8 lg:px-8">
-      <div className="rounded-xl bg-secondary px-4 py-6 sm:px-8 sm:py-12 md:rounded-2xl lg:rounded-3xl lg:px-12 lg:pb-14 lg:pt-12">
+      <div className="rounded-xl bg-secondary px-4 py-6 dark:bg-background sm:px-8 sm:py-12 md:rounded-2xl lg:rounded-3xl lg:px-12 lg:pb-14 lg:pt-12">
         <h2 className="text-center text-3xl font-bold md:text-5xl">
           My <AccentText>Experience</AccentText>
         </h2>
