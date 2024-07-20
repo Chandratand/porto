@@ -1,20 +1,27 @@
 [
   {
     "id": 1,
-    "title": "Software Developer - Adaremit",
-    "description": "Work as a software developer on the frontend and backend sides, collaborating with the team in creating websites and mobile applications for PT Anugrah Danamas Remit (Adaremit).",
-    "logo": "/assets/logo/adaremit-logo.svg",
-    "period": "Descember 2021 - Now"
+    "title": "FullStack Developer - INCIT",
+    "description": "Develop and maintain web applications, manage front-end and back-end tasks at International Centre for Industrial Transformation (INCIT).",
+    "logo": "/assets/logo/incit-logo.png",
+    "period": "July 2024 - Now"
   },
   {
-    "id": 2,
-    "title": "Fullstack Developer - MFC",
-    "description": "Becoming a full-stack developer for MFC in the \"Pengabdian Kepada Masyarakat (PkM)\" program, playing a role in developing software with the team for MFC.",
+    "id": 3,
+    "title": "Software Developer - Adaremit",
+    "description": "Develop and maintain software on frontend and backend, collaborating to create websites and mobile apps.",
+    "logo": "/assets/logo/adaremit-logo.svg",
+    "period": "Descember 2021 - July 2024"
+  },
+  {
+    "id": 3,
+    "title": "FullStack Developer - MFC",
+    "description": "Becoming a full-stack developer for MFC in the \"Pengabdian Kepada Masyarakat (PkM)\" program.",
     "logo": "/assets/logo/mfc-logo.png",
     "period": "April 2023 - Febuary 2024"
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "Student - Mikroskil University",
     "description": "Became an information systems student at Mikroskil University and achieved a provisional GPA of 3.97.",
     "logo": "/assets/logo/mikroskil-logo.png",
