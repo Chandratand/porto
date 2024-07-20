@@ -8,7 +8,7 @@ const Lottie = dynamic(() => import('lottie-react'), { ssr: false });
 
 const CTASection = () => {
   return (
-    <section className="flex items-center justify-center bg-primary px-4 py-16 dark:bg-muted">
+    <section className="flex items-center justify-center bg-primary px-4 py-16 dark:bg-muted/30">
       <div className="flex w-full max-w-[1000px] items-center justify-between rounded-3xl border bg-background px-8 py-10 shadow-sm sm:rounded-[32px] sm:px-12">
         <div>
           <p className="text-sm font-bold text-primary sm:mb-2 md:text-lg">HAVE ANY PROJECT IDEA?</p>

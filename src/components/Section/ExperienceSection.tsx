@@ -7,12 +7,12 @@ import ExperienceList from '../ExperienceList';
 const ExperienceSection = () => {
   return (
     <section className="container py-8 lg:px-8">
-      <div className="rounded-xl bg-secondary px-4 py-6 dark:bg-background sm:px-8 sm:py-12 md:rounded-2xl lg:rounded-3xl lg:px-12 lg:pb-14 lg:pt-12">
+      <div className="rounded-xl bg-secondary px-4 py-6 dark:bg-secondary/40 sm:px-8 sm:py-12 md:rounded-2xl lg:rounded-3xl lg:px-12 lg:pb-14 lg:pt-12">
         <h2 className="text-center text-3xl font-bold md:text-5xl">
           My <AccentText>Experience</AccentText>
         </h2>
         <div className="mt-10 flex w-full flex-wrap justify-center gap-4 lg:flex-nowrap lg:gap-10">
-          <div className="w-full max-w-[300px] justify-center sm:flex md:max-w-[600px]">
+          <div className="w-full max-w-[300px] justify-center sm:flex md:max-w-[450px]">
             <Image data-aos="fade-up" src={ILExperience} alt="experience-illustration" className="-scale-x-100" width={450} height={450} />
           </div>
           <div className="flex flex-col gap-4">
