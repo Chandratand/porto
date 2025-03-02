@@ -1,5 +1,11 @@
 [
   {
+    "id": 5,
+    "title": "INCIT's Projects",
+    "description": "As a Full Stack Developer at INCIT, I have worked on several projects/services/modules used by both INCIT's clients/users and internal teams. I collaborated with the team to develop and enhance both the frontend and backend, ensuring seamless functionality and an optimal user experience",
+    "image": "/project/incit.png"
+  },
+  {
     "id": 1,
     "title": "Adaremit Admin",
     "description": "Operational admins use the Adaremit admin website to perform their operational activities. This website uses NextJs technology on the frontend side and Node.js on the backend side to create APIs. My role as a frontend developer sometimes also plays a role on the backend side as well.  ",
